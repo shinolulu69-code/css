@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-div.first {
-      border:5px solid #4FFFA1;
-      width:200px;
-    }
-    div.second {
-      position: relative;
-      left: 100px;
-      width:200px;
-      border:5px solid #CCCCCC;
-    }
-    div.third {
-      position: relative;
-      left: 100px;
-      width:200px;
-      border:5px solid #ee3e64;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>School Announcement</title>
+    <style>
+        body {   
+            margin: 40px;
+            background: #116eca89;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .notice-box {
+            position: relative;
+            background: #eef6fb;
+            padding: 40px 30px 40px 130px;
+            min-height: 150px;
+            max-width: 600px;
+            margin: auto;
+            overflow: auto
+            border-radius: 12px;
+        }
+        .notice-img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-left: -110px;
+            margin-top: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+            background: #ccc;
+        }
+        .decorative-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: #0d16b5;
+            color: #dddbdb;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="first">First Div</div>
-  <div class="second">Second Div
-  <div class="third">Third Div</div></div>
+    <h1>Important Notice</h1>
+    <div class="notice-box clearfix">
+        <img class="notice-img" src="360_F_1537182921_Jb69yDUEOX9dNNlbskscEZQnzCFOn8Ld.webp" alt="Notice Image">
+        <div class="decorative-badge">NEW</div>
+        <p>
+            Dear students and parents,<br>
+            Please note that the school will be closed on Friday due to maintenance work. Classes will resume as normal on Monday. For urgent queries, contact the school office.<br><br>
+            Thank you for your understanding and cooperation.
+        </p>
+    </div>
 </body>
 </html>
